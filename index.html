@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+      <div id="blur">
+      </div>
+      <div class="overflow">
+        <div id="blob"></div>
+      </div>
+    <header id="header" class="header">
+      <div class="title">Search Engine Comparison</div>
+    </header>
+    <center>
+      <div class="padding">
+        <input class="input" id="input" placeholder="Input Search Topic" onkeydown="key_down()"></input>
+      
+        <label for="searchEngines">
+          <select class="dropdown" for="searchEngines" id="dropdown">
+            <option value="google">Google</option>
+            <option value="duckduckgo">Duck Duck Go</option>
+            <option value="bing">Bing</option>
+          </select>
+        </label>
+        </div>
+
+    </center>
+    <div class="iframepadding">
+      <iframe class="iframe1" id="iframe1" src="./iframe.html"></iframe>
+      <iframe class="iframe2" id="iframe2" is="" src="./iframe.html"></iframe>
+    </div>
+      <center>
+        <table id="table" class="table">
+          <tr>
+            <td></td>
+            <th>Searchie</th>
+            <th>Choose Search Engine</th>
+          </tr>
+          <tr>
+            <td>Total Links
+              <span onclick="showHide(this)">
+                <p class="explanation">Explain</p>
+                <p class="explanation_text">This section explains the number of total links retrieved from the search engine. It represents the overall quantity of search results returned for the given search query. More total links might indicate broader coverage, potentially offering users a wider range of options. However, it could also raise privacy concerns, as more links mean more potential data tracking and exposure to malicious websites.</p>
+              </span>                 
+            </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>Ads
+              <span onclick="showHide(this)">
+                <p class="explanation">Explain</p>
+                <p class="explanation_text">Ads indicate the presence of sponsored content within search results. Encountering more ads on search engines may impact user privacy by potentially tracking user behavior for targeted advertising. Moreover, excessive ads could obscure organic search results, affecting the user experience and potentially leading to unintentional clicks on malicious links.</p>
+              </span>
+            </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>Direct Link
+              <span onclick="showHide(this)">
+                <p class="explanation">Explain</p>
+                <p class="explanation_text">Direct links allow users to navigate directly to a website from the search results without intermediaries. Prioritizing direct links can enhance user privacy and security by reducing exposure to third-party trackers and potential phishing attempts. However, the absence of direct links may lead to privacy risks associated with passing through additional tracking mechanisms or intermediary pages before reaching the desired website.</p>
+              </span>
+            </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+        </table>              
+      </center>
+  </div>
+</body>
+<script src="./x-frame.js"></script>
+<script src="engines/google.js"></script>
+<script src="engines/bing.js"></script>
+<script src="engines/duckduckgo.js"></script>
+<script src="script.js"></script>
+</html>

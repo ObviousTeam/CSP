@@ -1,0 +1,162 @@
+body {
+  background-color: #005bbb;
+  margin: 0rem;
+}
+
+.container {
+  height: 100vh;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  50% {
+    scale: 1 1.5;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+.overflow {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index:   -2;
+  overflow: hidden;
+}
+
+#blob {
+  background-color: white;
+  z-index: -2;
+  height: 34vmax;
+  aspect-ratio: 1;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+}
+
+#blur {
+  height: 100vh;
+  width: 100vw;
+  position: fixed; /* or absolute */
+  z-index: -1;
+  bottom: 0;
+  backdrop-filter: blur(12vmax);
+  overflow: hidden;
+}
+
+.header {
+  position: relative;
+  padding-bottom: 25px;
+  width: 100%;
+  color: #005bbb;
+  background-color: #ffffff;
+  border-radius: 0px 0px 20px 20px;
+  align-items: center;
+}
+
+.title {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.padding {
+  padding: 40px;
+  vertical-align: middle;
+}
+
+.input {
+  position: relative;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 20px;
+  height:40px;
+  width: 50%;
+  line-height:40px;
+  padding:0 5px;
+  text-align: center;
+  border-color: #ffffff;
+}
+
+::placeholder {
+   text-align: center; 
+}
+
+.extrapadding {
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.dropdown {
+  width: 20%;
+  padding: 10px;
+  padding-left: 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.iframepadding {
+  padding-bottom: 20px;
+  padding-top: 40px;
+  height: 50%;
+}
+
+iframe {
+  width: 30%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.iframe1 {
+  position: relative;
+  left: 16%
+}
+
+.iframe2 {
+  position: relative;
+  left: 24%
+}
+
+.table {
+  position: relative;
+  padding: 20px; /* Adjust the padding as needed */
+  width: 80%; 
+  border-collapse: collapse;
+  margin: 0 auto; 
+}
+
+th, td {
+  border: 1px solid;
+  padding: 8px; 
+}
+
+th, td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+.explanation {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.explanation_text {
+  color: black;
+  text-decoration: none;
+  cursor: auto;
+}
